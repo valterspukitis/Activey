@@ -1,0 +1,503 @@
+<!--
+/* Matrikelnr.: 1510601043, fhs38707
+ * Autor: Valters Pukitis
+ * FH Salzburg / MMT / Zweck: MMP1 */
+-->
+
+* { padding: 0; margin: 0; }
+
+html, body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F0EADC;
+  height: 100%;
+}
+
+a{
+  color: #F0EADC;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+li { list-style-type: none; }
+
+ul h3{
+  padding: 10px 0 0 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  border-bottom: 1px solid #EEE;
+  background-color: #4A0B2D;
+}
+
+nav {
+  width: 100%; text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid #EEE;
+  color: #F0EADC;
+}
+nav a:hover { background: #F0EADC; color: #4A0B2D; }
+nav li:last-child a { border-bottom: none; }
+
+h1{
+  margin: 30px 0 0 0;
+  text-transform: uppercase;
+  color: #4A0B2D;
+  text-align: center;
+}
+
+h2{
+  color: #F0EADC;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+}
+
+h3{
+  padding: 22px;
+  color: #F0EADC;
+  text-transform: uppercase;
+}
+
+h4{
+  margin: 30px 0 0 0;
+  text-transform: uppercase;
+  color: #4A0B2D;
+  text-align: center;
+  font-size: 15px;
+}
+
+img{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+  width: 100%;
+}
+
+input{
+  color: #0B5F5A;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 5%;
+  font-size: 20px;
+  background-color: #DFDACC;
+  width: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: #4A0B2D;
+  outline:none;
+}
+
+.wrapper {
+  min-height:100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+.wrapper_flex {
+  min-height:100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+  display: flex;
+}
+.page{
+  width: 80%;
+  margin: auto;
+  max-width: 400px;
+  padding-bottom: 4em;
+}
+
+#title {
+  float: right;
+  line-height: 50px;
+  color: #F0EADC;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 0 20px;
+}
+
+.form{
+  margin: auto;
+}
+
+.fail_success input{
+  border: none;
+  outline: none;
+}
+
+.hint{
+  padding: 5px;
+  font-size: 14px;
+  color: #F0EADC;
+}
+
+#word, #time{
+  height: 40px;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.buzzer{
+  color: #F0EADC;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.full{
+  width: 100%;
+  float: left;
+}
+
+.onehalf_left{
+  width: 45%;
+  float: left;
+  margin-right: 5%;
+}
+
+.onehalf_right{
+  margin-left: 5%;
+  width: 45%;
+  float: right;
+  padding-bottom: 20px;
+}
+
+.wordbox .button{
+  height: 80px;
+}
+
+.wordbox h1{
+  font-size: 21px;
+}
+
+.wordbox h2{
+  height: 20px;
+}
+
+.button{
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4A0B2D;
+  color: #F0EADC;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: #4A0B2D;
+  border-left: none;
+  border-top: none;
+}
+.button:active{
+  border-color: #4A0B2D;
+  border-width: 2px;
+  border-style: inset;
+  border-right: none;
+  border-bottom: none;
+}
+
+.button:focus{
+  border-radius: 5px;
+  border-color: #4A0B2D;
+  border-width: 2px;
+  color: #F0EADC;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  outline: none;
+}
+
+.info{
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  background-color: #0B5F5A;
+  color: #F0EADC;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: outset;
+  border-color: #0B5F5A;
+  border-width: 2px;
+  border-left: none;
+  border-top: none;
+}
+.info:active{
+  border: inset;
+  border-color: #0B5F5A;
+  border-width: 2px;
+  border-right: none;
+  border-bottom: none;
+}
+.info:focus{
+  border: inset;
+  border-color: #00786E;
+  border-width: 2px;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+}
+
+.info_text{
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  background-color: #00786E;
+  color: #F0EADC;
+  padding: 30px 50px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.info_error{
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  background-color: #4A0B2D;
+  color: #F0EADC;
+  padding: 30px 50px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+.clear{
+  clear: both;
+  height: 40px;
+}
+
+.info[type="submit"]{
+  cursor: pointer;
+}
+
+.score_title{
+  height: 100%;
+  border-bottom: 3px solid #4A0B2D;
+  overflow: auto;
+}
+
+.score_title .score_team{
+  font-size: 17px;
+  width: 60%
+}
+
+.score_title .score_points{
+  font-size: 17px;
+  width: 40%;
+}
+
+.score_team{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  padding: 10px 10px 10px 30px;
+  box-sizing: border-box;
+  width: 70%;
+  float: left;
+  color: #4A0B2D;
+}
+
+.score_points{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  padding: 10px 30px 10px 10px;
+  box-sizing: border-box;
+  width: 30%;
+  float: right;
+  text-align: right;
+  color: #4A0B2D;
+}
+
+.game_info{
+  text-align: center;
+}
+
+.game_info h1{
+  color: #4A0B2D;
+  margin: 0;
+}
+
+.game_info h3{
+  color: #4A0B2D;
+  padding: 20px 0 0;
+}
+
+.menu_info{
+  padding: 50px 10px;
+}
+
+.menu h3 {
+  font-size: 15px;
+}
+.save{
+  border-radius: 5px;
+  background-color: #00786E;
+  color: #F0EADC;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.fb{
+  border-radius: 5px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.impressum{
+  text-align: center;
+}
+.impressum h2{
+  color: #4A0B2D;
+  padding-top: 30px;
+  font-size: 30px;
+}
+.impressum h3{
+  color: #4A0B2D;
+  padding-bottom: 5px;
+}
+.impressum img{
+  width: 250px;
+}
+
+.fail_success{
+  width: 100%;
+  outline: none;
+}
+
+.fail input{
+  background-color: transparent !important;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.success input{
+  background-color: transparent !important;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.success_button{
+  background-image: url("../img/success.svg");
+  background-repeat: no-repeat;
+  margin: 5% 10%;
+  float: right;
+  width: 30%;
+  height: 115px;
+  background-size: 100%;
+  border: none;
+  outline: none;
+
+}
+.fail_button{
+  background-image: url("../img/fail.svg");
+  background-repeat: no-repeat;
+  margin: 5% 10%;
+  float: left;
+  width: 30%;
+  height: 115px;
+  background-size: 100%;
+  border: none;
+  outline: none;
+}
+
+.fb_b{
+  width: 120px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.footer{
+  height: 2em;
+  text-align: center;
+  padding: 2em 0 0;
+  letter-spacing: 1px;
+  color: #B2AFAC;
+  width: 100%;
+}
+
+footer a{
+  color: #B2AFAC;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+.menu {
+  width: 240px;
+  height: 93%;
+  position: absolute;
+  background: #4A0B2D;
+  left: -240px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  
+}
+.menu-icon {
+  width: 30px;
+  padding: 0 0 0 10px;
+  color: #E2DFDC;
+  cursor: pointer;
+  float: left;
+  font-size: 5px;
+}
+.menu-icon img{
+  padding: 10px 0;
+}
+
+#menuToggle { display: none; }
+
+#menuToggle:checked ~ .menu { position: absolute; left: 0; }
